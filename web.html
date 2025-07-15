@@ -3,8 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./2.png" type="image/x-icon" />
+    <style>
+  body {
+  background-image: url(./3.jpg);
+  background-size: cover;
+}
+td {
+  color: whitesmoke;
+  font-size: 30px;
+  font-weight: 900;
+}
+.box td {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(172, 255, 47, 0.619);
+  position: relative;
+  animation-name: name;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-delay: 1ms;
+  border-radius: 10px;
+  animation-fill-mode: forwards;
+}
+@keyframes name {
+  0% {
+    background-color: greenyellow;
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    background-color: blue;
+    top: 0px;
+    left: 0px;
+    transform: rotate(30deg);
+  }
+  50% {
+    background-color: red;
+    top: 0px;
+    left: 1150px;
+    transform: rotate(30deg);
+  }
+  75% {
+    background-color: violet;
+    top: 0px;
+    left: 1150px;
+    transform: rotate(0deg);
+  }
+  100% {
+    background-color: yellowgreen;
+    top: 0px;
+    left: 575px;
+    transform: rotate(360deg);
+  }
+}
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 10px;
+}
+</style>
     <title>Welcome to My World</title>
   </head>
   <body>
